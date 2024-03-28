@@ -1,15 +1,20 @@
-<!doctype html>
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT DevOps - Красива HTML сторінка</title>
+    <title>IT DevOps - Hello from Flask</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>IT DevOps</h1>
+        {% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+
     </header>
     <main>
         <section class="hero">
@@ -51,9 +56,3 @@
 </body>
 </html>
 
-<title>Hello from Flask</title>
-{% if name %}
-  <h1>Hello {{ name }}!</h1>
-{% else %}
-  <h1>Hello, World!</h1>
-{% endif %}
