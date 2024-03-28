@@ -1,58 +1,6 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT DevOps - Hello from Flask</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>IT DevOps</h1>
+<h1>IT DevOps</h1>
         {% if name %}
   <h1>Hello {{ name }}!</h1>
 {% else %}
   <h1>Hello, World!</h1>
 {% endif %}
-
-    </header>
-    <main>
-        <section class="hero">
-            <img src="images/hero-image.jpg" alt="IT DevOps">
-            <h2>Вступ до світу IT DevOps</h2>
-            <p>DevOps - це практика, яка об'єднує людей, процеси та технології для забезпечення швидкої та надійної поставки програмного забезпечення.</p>
-            <a href="about.html">Дізнатися більше</a>
-        </section>
-        <section class="services">
-            <h2>Наші послуги</h2>
-            <ul>
-                <li>Консультації DevOps</li>
-                <li>Впровадження DevOps</li>
-                <li>Автоматизація CI/CD</li>
-                <li>Моніторинг та усунення несправностей</li>
-            </ul>
-        </section>
-        <section class="blog">
-            <h2>Блог</h2>
-            <ul>
-                <li><a href="#">5 найкращих практик DevOps</a></li>
-                <li><a href="#">Як автоматизувати ваші CI/CD pipelines</a></li>
-                <li><a href="#">Моніторинг вашої IT-інфраструктури</a></li>
-            </ul>
-        </section>
-        <section class="contact">
-            <h2>Зв'язатися з нами</h2>
-            <form action="#">
-                <input type="text" name="name" placeholder="Ваше ім'я">
-                <input type="email" name="email" placeholder="Ваш email">
-                <textarea name="message" placeholder="Ваше повідомлення"></textarea>
-                <button type="submit">Надіслати</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 IT DevOps</p>
-    </footer>
-</body>
-</html>
-
